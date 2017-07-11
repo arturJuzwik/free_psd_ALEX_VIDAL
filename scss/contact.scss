@@ -1,0 +1,67 @@
+.contact{
+	@include flexbox-basic;
+	width:100%;
+	&-form{
+		width:80%;
+		@include flexbox-basic;
+		margin-top:50px;
+		@media #{$from0pxto727px}{
+			width:100%;
+		}
+	}
+	&-form-two-inputs-holder{
+		display:flex;
+		justify-content: space-between;
+		align-content: space-between;
+		width:80%;
+		@media #{$from0pxto727px}{
+			flex-direction: column;
+		}
+	}
+	&-form-two-inputs-holder>input{
+		width:49%;
+		border:none;
+		border-bottom:1px solid black;
+		padding:2px 0 5px 15px;
+		@include font-thin;
+		@media #{$from0pxto727px}{
+			width:100%;
+			margin-top:20px;
+		}
+	}
+	&-form-input{
+		border:none;
+		border-bottom:1px solid black;
+		padding:2px 0 5px 15px;
+		@include font-thin;
+		
+	}
+	.text-message{
+		border:none;
+		border-bottom:1px solid black;
+		padding:2px 0 0 15px;
+		@include font-thin;
+		width:80%;
+		height:175px;
+		margin-top:20px;
+		resize:no;
+	}
+}
+form>button{
+	&active{
+	
+	}
+	margin-top:50px;
+	@include black-button-shadow;
+	@include button-style;
+	.icon-paper-plane-empty{
+	position:relative;
+		left:5px;
+		top:2px;
+	}
+
+}
+form>button:hover{
+	@include button-hover-black;
+	transition:background-color .4s ease;
+}

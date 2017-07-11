@@ -1,0 +1,96 @@
+
+footer{
+	margin-top:75px;
+	height:100px;
+	background:black;
+	@include font-regular;
+	color:white;
+	padding-top:50px;
+	.socials{
+			display:flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-self:flex-start;
+	
+
+	}
+	.social-container{
+		width:250px;
+		height:50px;
+		&-facebook{
+			transition:color 1s ease;
+			transition: background-color 1s ease;
+			&:hover{
+				color:#3b5998;
+			background-color: white;
+			}
+		}
+		&-twitter{
+		 @extend .social-container-facebook;
+			&:hover{
+				color:#4099FF;
+				background: white;
+			}
+		}
+		&-linkedin{
+			@extend .social-container-facebook;
+			&:hover{
+				color:#007bb6;
+				background:white;
+			}
+		}
+		&-google{
+			@extend .social-container-facebook;
+			&:hover{
+				color:#d34836;
+				background:white;
+			}
+		}
+	
+	}
+	.socials>div>a{
+		color:white;
+		display:inline-block;
+		border:1.75px solid white;
+		width:36px;
+		height:36px;
+		border-radius:50%;
+		margin:0 10px;
+		
+		>i{
+			display:inline-block;
+			position:relative;
+			margin: 9.5px 0 0 6.75px;
+		}
+		
+			
+		}
+}
+
+.bottom-up{
+	width:36px;
+	height:36px;
+	display:none;
+	position:fixed;
+		color:black;
+	background-color: #f1f1f1;
+		border:1.75px solid black;
+		border-radius:50%;
+		right: 50px;
+		bottom:50px;
+	>i{
+			display:inline-block;
+			position:relative;
+			margin: 9.5px 0 0 6.75px;
+	}
+}
+.bottom{
+	background-color:white;
+	color:black;
+	height:30px;
+	width:100%;
+	>p{
+		text-align:center;
+		line-height: 30px;
+	}
+}

@@ -1,0 +1,29 @@
+@import "../css/fontello.css";
+@import "mixins&variables.scss"; //mixins and variables
+@import "titles&headers.scss";// titles and headers
+@import "nav&main.scss";// navigation and start
+@import "about.scss";// about and progressbars
+@import "service.scss";// service
+@import "recent-works.scss";// gallery
+@import "counters.scss";// counters
+@import "contact.scss";//contact
+@import "footer.scss";//footer
+
+
+html,body{
+	height:auto;
+	width:auto;
+}
+button{
+	text-transform:uppercase;
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+
+ 

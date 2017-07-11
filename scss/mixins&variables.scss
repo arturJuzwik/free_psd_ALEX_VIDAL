@@ -1,0 +1,58 @@
+$font-family: Cormorant;
+@mixin font-regular{
+	font-family:$font-family;
+}
+@mixin font-bold{
+	font-family:$font-family;
+	font-weight:bold;
+}
+@mixin font-thin{
+	font-family:$font-family;
+	font-weight:300;
+}
+@mixin black-button-shadow{
+	-webkit-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.35);
+}
+@mixin flexbox-basic{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+}
+@mixin button-style{
+	width:175px;
+	height:50px;
+	background-color:white;
+	padding:0;
+	@include font-regular;
+	color:black;
+	font-size:16px;
+	border:1px solid black;
+	text-transform: uppercase;
+}
+@mixin button-hover-white{
+	color:black;
+	background-color:white;
+	transition: background-color 0.5s ease;
+	border:1px solid black;
+	-webkit-box-shadow: none;
+	-moz-box-shadow:none;
+	box-shadow: none;
+}
+@mixin button-hover-black{
+	color:white;
+	background-color:black;
+	transition: background-color 0.5s ease;
+	@include black-button-shadow;
+}
+$from0pxto1200px:"(min-width:0px) and (max-width:1200px)";
+$from728pxto1000px: "(min-width:728px) and (max-width:1000px)";
+$from0pxto727px:"(min-width:0px) and (max-width:728px)";
+$from0to568px: "(min-width:0) and (max-width:568px)";
+$from0pxto400px:"(min-width:0px) and (max-width:400px)";
+/** gallery images media query only */
+$gallery: "(min-width:0) and (max-width:410px)";
+/** menu nav media query only*/
+$menu-nav-mq:"(min-width:0) and (max-width:810px)";

@@ -1,0 +1,83 @@
+.about{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	p{
+		max-width:540px;
+		@include font-regular;
+		font-size:16px;
+		text-align: center;
+		margin-top:30px;
+			@media #{$from0to568px}{
+			padding:0 10px 0 10px;	
+			}
+	}
+	&-button{
+		@include black-button-shadow;
+		@include font-regular;
+		background-color:black;
+		border:none;
+		padding:0;
+		color:white;
+		font-size:16px;
+		width:208px;
+		height:51px;
+	}
+}
+.about-button:hover{
+		@include button-hover-white;
+	transition:background-color .4s ease;
+}
+.about-button:active{
+	background-color:black;
+	color:white;
+}
+.progressbar-background-1,.progressbar-background-2,.progressbar-background-3,.progressbar-background-4,.progressbar-background-5,.progressbar-background-6{
+	width:370px;
+	height:30px;
+	background-color:#dfdfdf;
+	margin: 0 5px 0 5px;
+	@media #{$from0pxto1200px}{
+		width:100%;
+		margin:0;
+	}
+}
+.progressbar-1,.progressbar-2,.progressbar-3,.progressbar-4,.progressbar-5,.progressbar-6{
+	width:1%;
+	height:100%;
+	background-color:#212121;
+}
+.progressbar-first-holder, .progressbar-second-holder{
+	display:flex;
+	align-content: space-between;
+	margin:25px 0 0 0;
+	@media #{$from0pxto1200px}{
+		flex-direction: column;
+		width:80%;
+	}
+}
+.progressbar-second-holder{
+	@media #{$from0pxto1200px}{
+		margin-top:5px;
+	}
+}
+.progressbars{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+	@media #{$from0pxto1200px}{
+	 	width:100%;
+	}
+	h6{
+		text-transform: uppercase;
+		font-size:24px;
+		@include font-regular;
+		margin:0 0 15px 0;
+		padding-left:5px;
+		@media #{$from0pxto1200px}{
+			margin: 5px 0 5px 0;
+		}
+	}
+}

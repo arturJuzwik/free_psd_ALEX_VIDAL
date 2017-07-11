@@ -1,0 +1,54 @@
+.service{
+	@include flexbox-basic;
+	background-image:url(../img/images/service-background.jpg);
+	background-size:cover;
+	height:400px;
+	margin-top:100px;
+	&-what-i-do{
+		background-color:white;
+		@include black-button-shadow;
+		@include flexbox-basic;
+		min-height:517px;
+		width:80%;
+		position:relative;
+		top:250px;
+		>.section-title{
+			margin-top:-10px !important;
+		}
+		@media #{$from0pxto1200px}{
+		min-height:700px;
+			top:170px;
+		}
+	}	
+	h6{
+		@include font-bold;
+		font-size:24px;
+		margin:10px 0 0 0;
+	}
+	p{
+		@include font-regular;
+		font-size:16px;
+	}
+}
+.skills-container{
+ 	display:flex;
+	text-align:center;
+	align-content: space-between;
+	margin-top:60px;
+	@media #{$from0pxto400px}{
+		margin-top:20px;
+	}
+	@media #{$from0pxto1200px}{
+		min-height:175px;
+		flex-direction: column;
+	}
+	p{
+	text-align: center;
+	margin:10px;
+	width:300px;
+		@media #{$from0pxto400px}{
+		width:auto;
+		padding: 0 5px 0 5px;
+	 	}
+	}
+}

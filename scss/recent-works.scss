@@ -1,0 +1,125 @@
+.recent-works{
+	margin-top: 320px;
+	@include flexbox-basic;
+}
+/*** gallery overlay ***/
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+ .snip1550 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px 8px;
+  min-width: 230px;
+  max-width: 375px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+.snip1550 *,
+.snip1550 *:before,
+.snip1550 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.snip1550:before {
+  position: absolute;
+  top: 50px;
+  bottom: 30px;
+  left: 0;
+  right: 60%;
+  content: '';
+  background-color: transparent;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  border: 8px solid #a1a1a2;
+  border-left:none;
+}
+
+.snip1550 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.gallery-h3,
+.snip1550 .icons {
+  position: absolute;
+  top: 75px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-h3,.snip1550 a {
+  margin: 2px;
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+.snip1550 a i {
+  display: block;
+  font-size: 23.52941176px;
+  line-height: 40px;
+  width: 40px;
+  height:40px;
+  border-radius:50%;
+  padding-top:8px;
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  border: 2px solid white;
+}
+.snip1550 a i:hover {
+  background-color: white;
+  color: #ffffff;
+  cursor: pointer;
+}
+.snip1550:hover:before,
+.snip1550.hover:before {
+  opacity: 0.5;
+}
+.snip1550:hover a,
+.snip1550.hover a {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.snip1550:hover a:nth-child(2),
+.snip1550.hover a:nth-child(2) {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+.snip1550:hover a:nth-child(3),
+.snip1550.hover a:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+/*** gallery overlay end***/
+
+.gallery{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	margin: 30px 0 30px 0;
+	>div{
+		margin:10px; 
+	}
+}
+
+.load-more-button{
+ @include font-regular;
+	@include button-style;
+	&:hover{
+		@include button-hover-black;
+		transition:background-color .4s ease;
+	}
+}
+.load-more-button:active{
+		background-color:white;
+		color:black;
+}
